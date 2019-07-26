@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="InvoiceGenerator.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="w3-sidebar w3-bar-block w3-light-grey" style="width: 18%">
+            <a href="Default.aspx" class="w3-bar-item w3-button">Generate Invoice</a>
+        </div> 
+      
+
+        <div style="margin-left: 18%; width: 80%">
+
+            <div class="w3-container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+
+        <div>
+            <br />
+            <br />
+        </div>
+
+    </form>
+</body>
+</html>
